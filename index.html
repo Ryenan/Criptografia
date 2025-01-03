@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Criptografia</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <canvas id="canvas2"></canvas>
+    <main>
+        <section class="sec1">
+            <div class="headerSec1">
+                <h1 class="title">Criptografia</h1>
+                <p class="paragraph"> Digite qualquer texto e ele será criptografado, de acordo com a <span style="font-weight: bold; color: #00FF41;">sua posição númerica.</span></p>        
+            </div>
+            <div class="bodySec1">
+                <div>
+                    <p class="paragraph" style="margin-bottom: 1%;">Digite seu texto:</p>
+                    <textarea name="message" autofocus autocomplete="off" id="message" class="message"></textarea>
+                </div>
+                <div>
+                    <div class="titleTextResult">
+                        <p class="paragraph" style="margin-bottom: 1%;">Resultado:</p>
+                        <button id="copy" onclick="copy(), itemCopy()"><img src="https://cdn-icons-png.freepik.com/512/11059/11059821.png" alt="copiar"></button>
+                    </div>
+                        <textarea name="message" autofocus autocomplete="off" readonly id="result" class="message" style="color: #00FF41; "></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+        <div id="custom-alert" class="modal">
+            <div class="modal-content">
+                <div>
+                    <img src="https://imgproxy.attic.sh/unsafe/rs:fit:768:768:1:1/t:1:FF00FF:false:false/pngo:false:true:256/aHR0cHM6Ly9hdHRp/Yy5zaC9oemU4MTJn/NXloMWZteW44d3Vs/ZmRnaHZkMDBy.png" alt="">
+                </div>
+                <h2 id="modal-title"></h2>
+                <p id="modal-message"></p>
+                <button id="modal-ok-btn">OK</button>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+* {
+  margin: 0;
+}
+
+html, body{
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow: auto;
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.644);
+  backdrop-filter: blur(0.1px);
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  color: white;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+canvas {
+  display: block;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.title{
+  font-family: monospace;
+  font-size: 4.5vw;
+}
+
+.paragraph{
+  font-family: monospace;
+  font-size: 1.4vw;
+}
+
+.sec1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2vh 0 2vh 0;
+  align-items: center;
+  gap: 10vh;
+}
+
+.headerSec1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodySec1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+}
+
+.message{
+  font-family: monospace;
+  font-size: 1.2vw;
+  width: 60vw;
+  height: 16vh;
+  resize: none;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.titleTextResult{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#copy{
+  width: 5%;
+  margin-bottom: 1%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#copy img{
+  object-fit: cover;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.219); 
+  backdrop-filter: blur(1px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.modal-content {
+  background-color: #000000;
+  padding: 2.5vh;
+  border-radius: 15px;
+  width: 20vw;
+  text-align: center;
+}
+
+.modal-content img{
+  width: 35%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+#modal-title {
+  font-size: 2vw;
+}
+
+#modal-message {
+  font-size: 1.1vw;
+  margin-bottom: 2vh;
+}
+
+#modal-ok-btn {
+  padding: 1vh 2vw;
+  background-color: #00e73a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#modal-ok-btn:hover {
+  background-color: #029b28;
+}
