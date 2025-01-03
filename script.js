@@ -136,7 +136,11 @@ function numeroOrdinal(){
 }
 
 let message = document.getElementById('message');
-message.addEventListener('input', (converter, removercaracteres))
+message.addEventListener('input', function(event){
+  (converter(event), 
+  removercaracteres (event))
+});
+  
 
 function removercaracteres(){
   let message = event.target.value;
