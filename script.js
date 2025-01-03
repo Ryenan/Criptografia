@@ -136,7 +136,15 @@ function numeroOrdinal(){
 }
 
 let message = document.getElementById('message');
-message.addEventListener('input', converter)
+message.addEventListener('input', (converter, removercaracteres))
+
+function removercaracteres(){
+  let message = event.target.value;
+
+  message = message.replace(/[^a-zA-Z0-9\s]/g, '')
+
+  event.target.value = message
+}
 
 function converter(){
    

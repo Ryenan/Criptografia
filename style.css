@@ -109,6 +109,7 @@ canvas {
   display: flex;
   justify-content: space-between;
   align-items: end;
+  width: 60vw;
 }
 
 #copy{
@@ -173,4 +174,41 @@ canvas {
 
 #modal-ok-btn:hover {
   background-color: #029b28;
+}
+
+@media (max-width: 768px) {
+  .title{
+    font-size: 8vh;
+  }
+
+  .paragraph{
+    font-size: 2.7vh;
+    padding: 0 2vw 0 2vw;
+  }
+
+  .message{
+    font-size: 2.5vh;
+    width: 80vw;
+  }
+
+  .titleTextResult{
+    width: 80vw;
+  }
+
+  #copy{
+    width: 6vh;
+  }
+
+  .modal-content{
+    width: 70vw;
+  }
+
+  #modal-message{
+    font-size: 3vh;
+  }
+
+  #modal-ok-btn{
+    padding: 1vh 5vw;
+  }
+
 }
